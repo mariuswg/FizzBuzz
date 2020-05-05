@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace FizzBuzz.Test
 {
     [TestClass]
-    public class FizzBuzzTest
+    public class FizzBuzzServiceTest
     {
         IFizzBuzzService fizzBuzzService = new FizzBuzzService();
 
