@@ -16,6 +16,11 @@ namespace FizzBuzz
 
         /// <summary>
         /// Simulate the FizzBuzz math game for a given number of integers, starting at 1
+        /// FizzBuzz Rules: 
+        /// If number is dividable by 3, say "Fizz". 
+        /// If dividable by 5, say "Buzz". 
+        /// If dividable by 15, say "FizzBuzz".
+        /// If a person says the number instead of the FizzBuzz value, that person is out of the game.
         /// </summary>
         /// <param name="count">The number at which the game will end</param>
         /// <returns>The resulting string of the FizzBuzz game simulation</returns>
@@ -30,10 +35,10 @@ namespace FizzBuzz
         }
 
         /// <summary>
-        /// Get the FizzBuzz value of the number or return the number
+        /// Get the FizzBuzz value of the given number based on the rules of the game
         /// </summary>
         /// <param name="number">Integer to convert to a FizzBuzz value</param>
-        /// <returns>FizzBuzz string value, or the input integer as a string</returns>
+        /// <returns>FizzBuzz value, or integer as a string</returns>
         public string GetFizzOrBuzz(int number)
         {
             if (number % 15 == 0)
