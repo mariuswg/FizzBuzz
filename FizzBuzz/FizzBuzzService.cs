@@ -2,6 +2,9 @@
 
 namespace FizzBuzz
 {
+    /// <summary>
+    /// A FizzBuzz math game service
+    /// </summary>
     public class FizzBuzzService : IFizzBuzzService
     {
         /// <summary>
@@ -16,7 +19,7 @@ namespace FizzBuzz
         /// </summary>
         /// <param name="count">The number at which the game will end</param>
         /// <returns>The resulting string of the FizzBuzz game simulation</returns>
-        public IList<string> GetFizzBuzz(int count)
+        public IList<string> SimulateFizzBuzzGame(int count)
         {
             IList<string> values = new List<string>();
             for (int i = 1; i <= count; i++)
@@ -27,7 +30,7 @@ namespace FizzBuzz
         }
 
         /// <summary>
-        /// Get the fizzbuzz value of the number or return the number
+        /// Get the FizzBuzz value of the number or return the number
         /// </summary>
         /// <param name="number">Integer to convert to a FizzBuzz value</param>
         /// <returns>FizzBuzz string value, or the input integer as a string</returns>

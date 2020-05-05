@@ -8,7 +8,7 @@ namespace FizzBuzz
         string Buzz { get; }
         string FizzBuzz { get; }
 
-        IList<string> GetFizzBuzz(int count);
+        IList<string> SimulateFizzBuzzGame(int count);
         string GetFizzOrBuzz(int number);
     }
 }

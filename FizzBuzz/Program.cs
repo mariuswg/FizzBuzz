@@ -8,7 +8,7 @@ namespace FizzBuzz
         {
             IFizzBuzzService fizzBuzzService = new FizzBuzzService();
 
-            foreach (var result in fizzBuzzService.GetFizzBuzz(100))
+            foreach (var result in fizzBuzzService.SimulateFizzBuzzGame(100))
             {
                 Console.WriteLine(result);
             }
